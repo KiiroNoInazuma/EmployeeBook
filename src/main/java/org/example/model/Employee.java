@@ -1,5 +1,7 @@
 package org.example.model;
 
+import java.text.Format;
+
 public class Employee {
 
     private final String fullName;
@@ -38,5 +40,10 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s:  %s, %s, %s", id, fullName, department, salary);
     }
 }

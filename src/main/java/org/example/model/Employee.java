@@ -1,7 +1,5 @@
 package org.example.model;
 
-import java.text.Format;
-
 public class Employee {
 
     private final String fullName;
